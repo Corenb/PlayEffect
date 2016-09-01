@@ -1,0 +1,17 @@
+name: PlayEffect
+main: eu.horyzon.playeffect.PlayEffect
+version: 1.0
+description: Special effect plugin!
+author: LLIcocoman_Hrz
+website: http://horyzon.eu
+
+commands:
+  playeffect:
+    aliases: [play, pe, effect]
+    description: Play special effect
+    permission: playeffect.command
+    
+permissions:
+  playeffect.command:
+    description: Allows access to everything
+    default: op
