@@ -21,8 +21,6 @@ public class PlayEffect extends JavaPlugin implements CommandExecutor {
 	public void onEnable() {
 		this.effects = new HashMap<UUID, PlayerEffect>();
 
-		getLogger().info("TEST");
-
 		getCommand("playeffect").setExecutor(this);
 		getLogger().info(getName() + " correctly enabled!");
 	}
