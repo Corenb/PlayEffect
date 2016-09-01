@@ -26,11 +26,13 @@ public class PlayEffect
     this.effects = new HashMap<UUID, PlayerEffect>();
     
     getCommand("playeffect").setExecutor(this);
+    getLogger().info(getName() + " correctly enabled!");
   }
   
   public void onDisable()
   {
     this.effects = null;
+    getLogger().info(getName() + " correctly disabled!");
   }
   
   public boolean onCommand(CommandSender s, Command cmd, String label, String[] args)
